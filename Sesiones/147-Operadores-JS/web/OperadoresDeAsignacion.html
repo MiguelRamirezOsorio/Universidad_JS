@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Universidad JavaScript</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/Imagenes/icono.png" />
+  </head>
+
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("/Semantica/nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+    <section class="divisor">
+      <h2>Operadores de Asignación en JS:</h2>
+      <article>
+        <p>Dividiremos a los operadores aritmeticos en 2 grupos:</p>
+        <ul>
+            <li>
+                Simple: Se encuentra: 
+                <ul>
+                    <li>Operador "=": Asigna un valor al elemento. Ejm: 
+                        <img src="/Imagenes/simple asig.png">
+                    </li>
+                </ul>
+            </li>
+            <li>Compuestos: 
+                <ul>
+                    <li>Operador +=: Se usa para sumar por un valor especifico y asignarselo a la variable.</li>
+                    <li>Operador -=: Se usa para restar por un valor especifico y asignarselo a la variable.</li>
+                    <li>Operador *=: Se usa para multiplicar por un valor especifico y asignarselo a la variable.</li>
+                    <li>Operador /=: Se usa para dividir por un valor especifico y asignarselo a la variable.</li>
+                    <li>Operador %=: Se usa para asginar el residuo del resultado de la varaible ante un valor especifico.</li>
+                    <li>Operador **=: Se usa para exponenciar por un valor especifico y asignarselo a la variable.</li>
+
+                </ul>
+            </li>
+            Ejemplo:
+            <div class="contImg">
+                <img src="/Imagenes/compuestosAsig.png" alt="Asignacion compuesto">
+            </div>
+        </ul>
+      </article>
+    </section>
+  </body>
+</html>

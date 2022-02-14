@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Universidad JavaScript</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="/Imagenes/icono.png" />
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
+
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("/Semantica/nav.html");
+    });
+  </script>
+  <!--end of Navigation bar-->
+  <section class="divisor">
+    <h2>Tipo de datos en JS:</h2>
+    <article>
+      <p>
+        Entre los tipos de datos basicos en JavaScript estan los siguientes:
+      </p>
+      <ul>
+        <li>
+          Tipo String: llamados tambien cadenas; estas almacenan los datos de
+          un grupo de caracteres, ademas este tipo de dato debe ir entre
+          comillas.<br />
+          Ejm:
+        </li>
+        <div class="contImg">
+          <img src="/Imagenes/String.jpg" alt="String" />
+        </div>
+        <li>
+          Tipo numerico: estas alamcenan numeros desde enteros hasta
+          decimales, este tipo de datos esta asignado medainte el var.<br />
+          Ejm:
+        </li>
+        <div class="contImg">
+          <img src="/Imagenes/Number.jpg" />
+        </div>
+        <li>
+          Tipo Object: son los que almacenan un conjunto de atributos de un
+          objeto como por ejemplo el nombre, apellido, email, telefono de una
+          persona, entre otros. Estos se almacenaran como un array del objeto
+          señalado.<br />
+          Ejm:
+        </li>
+        <div class="contImg">
+          <img src="/Imagenes/Object.png" />
+        </div>
+        <li>
+          Tipo Boolean: es aquel que puede representar valores
+          de lógica binaria, esto en general son los 2 valores que representan
+          verdadero o falso. Mayormente se usan para ampliar, limitar o definir
+          funciones, variables, entre otros.<br />
+          Ejm:
+        </li>
+        <div class="contImg">
+          <img src="/Imagenes/boolean.png" />
+        </div>
+        <li>
+          Tipo Function: En términos generales, una función es un "subprograma"
+          que puede ser llamado por código externo (o interno en caso de recursión)
+          a la función. Al igual que el programa en sí mismo, una función se compone
+          de una secuencia de declaraciones, que conforman el llamado cuerpo de la
+          función. Se pueden pasar valores a una función, y la función puede devolver un valor.
+          <br>En JavaScript, las funciones son objetos de primera clase, es decir,
+          son objetos y se pueden manipular y transmitir al igual que cualquier
+          otro objeto.<br />
+          Ejm:
+        </li>
+        <div class="contImg">
+          <img src="/Imagenes/function.png" />
+        </div>
+        <li>
+          Tipo Symbol: es un tipo de dato cuyos valores son únicos e immutables.
+          Dichos valores pueden ser utilizados como identificadores (claves) de
+          las propiedades de los objetos. Cada valor del tipo Symbol tiene asociado
+          un valor del tipo String o Undefined que sirve únicamente como descripción
+          del símbolo.<br />
+          Ejm:
+        </li>
+        <div class="contImg">
+          <img src="/Imagenes/symbol.png" />
+        </div>
+        <li>
+          Tipo Clase: son una mejora sintáctica sobre la herencia basada en prototipos
+          de JavaScript. La sintaxis de las clases no introduce un nuevo modelo de
+          herencia orientada a objetos en JavaScript. Las clases de JavaScript proveen
+          una sintaxis mucho más clara y simple para crear objetos y lidiar con la herencia.
+          En si una clase tiene como tipo de dato al function, siendo como una opcion de este.
+          <br />
+          Ejm:
+        </li>
+        <div class="contImg">
+          <img src="/Imagenes/clase.png" />
+        </div>
+        <li>
+          Tipo Undefined: Es uno de los valores primitivos de JavaScript. es una propiedad del
+          objeto global, es decir, una variable de alcance global. El valor inicial de undefined
+          es el valor primitivo undefined.<br> Se declara como <b style="color: crimson;">undefined</b>
+          a la variable que no se le ha asignado valor, o no se ha declarado en absoluto (no se declara,
+          no existe). Un método o sentencia también devuelve undefined si la
+          variable que se está evaluando no tiene asignado un valor. Una función devuelve undefined
+          si no se ha devuelto un valor.
+          <br />
+          Ejm:
+        </li>
+        <div class="contImg">
+          <img src="/Imagenes/undefined.png" />
+        </div>
+        <li>
+          Tipo Null: es un literal de Javascript que representa intencionalmente un valor nulo o "vacío".
+          En este caso null es un literal definido en la especificación del lenguaje, no una variable global
+          como en el caso undefined, por lo tanto, es una palabra reservada y no podremos utilizarla
+          como nombre de variable. A diferencia de undefined, null no dispone de un tipo específico y en el
+          caso de preguntar con typeof sobre un elemento con valor null nos dirá que es un objeto, lo cual
+          puede desconcertarnos, ya que en la práctica no podemos tratarlo como al resto de objetos.
+          <br />
+          Ejm:
+        </li>
+        <div class="contImg">
+          <img src="/Imagenes/null.png" />
+        </div>
+        <li>
+          Tipo Array: Son un conjunto de datos ordenados por posiciones y todos asociados en una sola
+          variable. Los datos pueden ser de cualquier tipo de dato, es decir, es posible crear una array
+          que tenga una cadena en la primera posición, un número en el segundo, un objeto en el tercero y
+          así sucesivamente. Podremos acceder a estos distintos datos de manera independiente o agrupándolos.
+          Cabe resaltar que un array de tipo objeto.
+          <br />
+          Ejm:
+        </li>
+        <div class="contImg">
+          <img src="/Imagenes/array.png" />
+        </div>
+      </ul>
+    </article>
+  </section>
+  <aside class="divisor">
+    <h2>OJO:</h2>
+    <article>
+      <p>
+        Las variables de los datos en JavaScript son dinamicas, esto nos quiere decir que en
+        cualquier momento se le puede asignar otro valor a la variable ya
+        definida, generando que el tipo de dato de la variable tambien se
+        modifique. <br>Podemos revisar que tipo de variable es, al ingresar el comando
+        "typeof" como se muestra en la figura.
+      </p>
+      <div class="contImg">
+        <img src="/Imagenes/typeof.jpg" />
+      </div>
+    </article>
+  </aside>
+  <aside class="divisor">
+    <h2>OJO 2:</h2>
+    <Article>
+      <p>
+      <h3>Valor vacio empty String:</h3>
+      Para el caso de un String que no contenga ningun valor y solo comillas ("")
+      existe el mensaje empty String, es asi como se pueden asignar cadenas vacias
+      a nuestras variables. Su tipo de dato es String.
+      </p>
+      <div class="contImg">
+        <img src="/Imagenes/emptyString.png" />
+      </div>
+    </Article>
+  </aside>
+  <aside class="divisor">
+    <h2>OJO 3:</h2>
+    <article>
+      <p>
+      <h3>Concatenacion de cadenas:</h3>
+      Para concatenar Strings (cadenas) debemos usar el operador "+", pero
+      tener en cuenta que JavaScript evalua las expresiones izquierda a derecha;
+      en base a eso la concatenacion puede tener cambios, a esto se le llama contexto de cadena.
+      <br /> Un ejemplo de esto se muestra en la siguiente figura.
+      </p>
+      <div class="contImg">
+        <img src="/Imagenes/concatenacion.png" />
+      </div>
+    </article>
+  </aside>
+  <aside class="divisor">
+    <h2>OJO 4:</h2>
+    <article>
+      <p>
+      <h3>Uso de var, let, const:</h3>
+      Se aplicara cada uno cuando:
+      </p>
+      <ul>
+        <li>
+          var: Es una variable que SI puede cambiar su valor y su scope es tanto local como global.
+        </li>
+        <li>
+          let:Es una variable que también podra cambiar su valor, pero solo vivirá(Funcionara) en el
+          bloque donde fue declarado.
+        </li>
+        <li>
+          const: Es una constante no reasignable la cual NO cambiara su valor en ningún momento en el futuro.
+        </li>
+      </ul>
+      <p>Ejm:</p>
+      <div class="contImg">
+        <img src="/Imagenes/variables.png" />
+      </div>
+    </article>
+  </aside>
+</body>
+</html>

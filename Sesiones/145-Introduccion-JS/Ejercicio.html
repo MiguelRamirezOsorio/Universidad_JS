@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Universidad JavaScript</title>
+  <link rel="shortcut icon" href="/Imagenes/icono.png" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
+
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("/Semantica/nav.html");
+    });
+  </script>
+  <!--end of Navigation bar-->
+  <section class="divisor">
+    <h2>Ejercicio saludo en JS:</h2>
+    <article>
+      <p>Primero lo que haremos sera abrir un archivo con el sufijo .js, dicha extension
+        denota que vamos a usar JavaScript.Tras esto usaremos la varable "var" para almacenar
+        el mensaje, que sera un string; tras esto; con el console.log() podremos llamar a
+        dicha variable.
+      </p>
+      <p>El resultado de mandar a imprimir en consola sería:</p>
+      <div class="contImg">
+        <img src="/Imagenes/saludosJS.jpg" />
+      </div>
+    </article>
+  </section>
+
+</body>
+
+</html>

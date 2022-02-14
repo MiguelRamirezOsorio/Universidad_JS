@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Universidad JavaScript</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="/Imagenes/icono.png" />
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
+
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("/Semantica/nav.html");
+    });
+  </script>
+  <!--end of Navigation bar-->
+  <section class="divisor">
+
+    <h2>Hola mundo en JS:</h2>
+    <article>
+      <p>Primero lo que haremos sera abrir un archivo con el sufijo .js, dicha extension
+        denota que vamos a usar JavaScript.
+      </p>
+      <div class="contImg">
+        <img src="/Imagenes/HolaMundo.jpg" />
+      </div>
+
+      <p>Tras eso, digitaremos lo siguiente:</p>
+      <div class="contImg">
+        <img src="/Imagenes/codHola.jpg" />
+      </div>
+      <p>Tenemos:</p>
+      <ul class="lista">
+        <li>var: nos sirve para indicar una variable.</li>
+        <li>console.log(): este comando manda a imprimir en consola lo que valla entre las parentesis.</li>
+      </ul>
+
+      <p>El resultado de mandar a imprimir en consola sería:</p>
+      <div class="contImg">
+        <img src="/Imagenes/consolaHola.jpg" />
+      </div>
+    </article>
+  </section>
+</body>
+
+</html>

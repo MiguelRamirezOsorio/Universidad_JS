@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Universidad JavaScript</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="/Imagenes/icono.png" />
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("/Semantica/nav.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+    <section class="divisor">
+        <h2>Ciclo For:</h2>
+        <article>
+            <p>
+                Esta sentencia es del tipo ciclica; Esta formada por la siguiente
+                estructura:
+            </p>
+            <div class="estructura">
+                <p>for(inicializacion; condicion; inc o decre){</p>
+                <p style="margin-left: 30px">Ejecuta mientras la condicion sea verdadera</p>
+                <p>}</p>
+            </div>
+            <p>Donde en la primera parte se inicializa el contador,
+                en la segunda parte se analiza si la condicion es verdadera,
+                y en la tercera parte se incrementará o decrementará el contador
+                de acuerdo a lo que se escriba. <br>
+                En los corchetes irá todo el codigo que
+                se ejecutará de manera repetida
+                hasta que la condicion no se cumpla.
+            </p>
+            <p>Por ahora se proporcionara un ejemplo:</p>
+            <p>Ejm :</p>
+            <div class="contImg">
+                <img src="/Imagenes/for.png" alt="Ciclo for">
+            </div>
+    </section>
+    <aside class="divisor">
+        <h2>OJO:</h2>
+        <article>
+            <h3>Palabra reservada continue:</h3>
+            <p>
+                La palabra continue es usada para terminar
+                la ejecución de las sentencias de la iteración
+                actual del bucle actual o la etiqueta y continua
+                la ejecución del bucle con la próxima iteración.
+                En contraste con la sentencia break, continue no
+                termina la ejecución del bucle por completo; en
+                cambio:</p>
+            <ul>
+                <li>En un bucle while, salta de regreso a la condición.</li>
+                <li>En un bucle for, salta a la expresión actualizada</li>
+            </ul>
+            <p>La sentencia continue puede incluir una etiqueta opcional 
+                que permite al programa saltar a la siguiente
+                iteración del bucle etiquetado en vez del bucle actual. 
+                En este caso, la sentencia continue necesita
+                estar anidada dentro de esta sentecia etiquetada.
+            </p>
+            <p>Ejm:</p>
+            <div class="contImg">
+                <img src="/Imagenes/continue.png" alt="Palabra continue">
+            </div>
+        </article>
+    </aside>
+</body>
+
+</html>

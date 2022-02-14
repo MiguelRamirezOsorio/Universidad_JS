@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Universidad JavaScript</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/Imagenes/icono.png" />
+  </head>
+
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("/Semantica/nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+    <section class="divisor">
+      <h2>Buenas Practicas en JS:</h2>
+      <article>
+        <h3>Uso de camel case:</h3>
+        <p>
+          Se usa cuando el nombre de una variable excede las dos palabras; es
+          asi que por ejemplo si el nombre de la variable es let
+          apellidopaterno, mediante el camel case pasaria a ser: let
+          apellidoPaterno. El ejemplo queda dado en la siguiente imagen:
+        </p>
+        <div class="contImg">
+          <img src="/Imagenes/camelCase.png" />
+        </div>
+      </article>
+      <article>
+        <h3>Variables en una misma linea:</h3>
+        <p>
+          Para las variables en una misma linea se separará por comas cada
+          variable, ademas de darle un espaciado en cada coma, por ultimo a cada
+          variable que se encuentre en la misma linea tambien se le puede
+          asignar en ese mismo lugar.
+          <br />Ejm:
+        </p>
+        <div class="contImg">
+          <img src="/Imagenes/mismaLinea.png" alt="variables" />
+        </div>
+      </article>
+      <article>
+        <h3>Sensibilidad entre mayusculas y minusculas:</h3>
+        <p>
+          En JavaScript tiene importancia el tipo de letra con el cual se
+          nombran las variables debido a esto, la variable nombreCompleto no
+          será igual a la variable nombrecompleto. Esto por esto que debes tener
+          cuidado al definir tus varaibles en JavaScript.
+        </p>
+        <div class="contImg">
+          <img src="/Imagenes/sensibilidad.png" />
+        </div>
+      </article>
+      <article>
+        <h3>Correcta defincion de nombres de variables:</h3>
+        <p>
+          El nombre de la variable cambiará de acuerdo las reglas especificadas:
+        </p>
+        <ul>
+          <li>Empezar con un numero.</li>
+          <li>Empexar con guion bajo o dolar.</li>
+          <li>Uso de palabras reservadas.</li>
+          <li>Modificacion de las palabras reservadas.</li>
+        </ul>
+        <div class="contImg">
+          <img src="/Imagenes/nombreCorrectoVariables.png" alt="Variables" />
+        </div>
+      </article>
+    </section>
+  </body>
+</html>

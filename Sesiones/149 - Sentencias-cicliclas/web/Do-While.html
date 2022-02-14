@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Universidad JavaScript</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="/Imagenes/icono.png" />
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
+
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("/Semantica/nav.html");
+    });
+  </script>
+  <!--end of Navigation bar-->
+  <section class="divisor">
+    <h2>Ciclo Do - While:</h2>
+    <article>
+      <p>
+        Esta sentencia es del tipo ciclica; se diferencia de la sentencia 
+        ciclica while en que esta ejecutara una vez mas el codigo a repetir 
+        en el momento en que la condicion por primera vez no sea verdadera. 
+        Esta formada por la siguiente estructura:
+      </p>
+      <div class="estructura">
+        <p>do{</p>
+        <p style="margin-left: 30px">Ejecuta mientras la condicion sea verdadera</p>
+        <p>}</p>    
+        <p>while(condicion);</p>
+      </div>
+      <p>Por ahora se dará un ejemplo:</p>
+      <p>Ejm :</p>
+      <div class="contImg">
+        <img src="/Imagenes/do-while.png" alt="Sentencia do-while">
+      </div>
+      
+  </section>
+  <aside class="divisor">
+    <h2>OJO:</h2>
+    <article>
+        <h3>Etiquetas (labels):</h3>
+        <p>
+          Proporciona una sentencia con un identificador al que se 
+          puede referir al usar las sentencias break o continue.<br>
+          Por ejemplo, puede usar una etiqueta para identificar 
+          un bucle, y entonces usar las sentencias break o 
+          continue para indicar si un programa debería interrumpir 
+          el bucle o continuar su ejecución.
+        </p>
+        <p>Ejm:</p>
+        <div class="contImg">
+            <img src="/Imagenes/label.png" alt="Uso label">
+        </div>
+    </article>
+</aside>
+</body>
+
+</html>

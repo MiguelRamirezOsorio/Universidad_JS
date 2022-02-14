@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Universidad JavaScript</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/Imagenes/icono.png" />
+  </head>
+
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("/Semantica/nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+    <section class="divisor">
+      <h2>Operadores Relacionales en JS:</h2>
+      <article>
+        <p>Primero inicializaremos las variables:</p>
+        <div class="contImg">
+          <img src="/Imagenes/iniRel.png" alt="Inicio Relacional" />
+        </div>
+        <p>Tras esto denotaremos a los operadores. Estos son:</p>
+        <ul>
+          <li>
+            Operador >: Llamado operador mayor que ,comprueba si el operador de 
+            la izquierda es mayor que el de la derecha, si ese fuera el caso
+            arrojara un valor Booleano(True = si es mayor , False = si es menor).
+            Este operador no toma en cuenta el tipo de dato de los operandos.
+          </li>
+          <li>
+            Operador >=: Llamado operador mayor igual que ,comprueba si el operador de 
+            la izquierda es mayor o igual que el de la derecha, si ese fuera el caso
+            arrojara un valor Booleano(True = si es mayor o igual , False = si es menor).
+            Este operador no toma en cuenta el tipo de dato de los operandos.
+          </li>
+          <li>
+            Operador <: Llamado operador menor que ,comprueba si el operador de 
+            la izquierda es menor que el de la derecha, si ese fuera el caso
+            arrojara un valor Booleano(True = si es menor , False = si es mayor).
+            Este operador no toma en cuenta el tipo de dato de los operandos.
+             
+          </li>
+          <li>
+            Operador <=: Llamado operador menor o igual que ,comprueba si el operador de 
+            la izquierda es menor o igual que el de la derecha, si ese fuera el caso
+            arrojara un valor Booleano(True = si es menor o igual, False = si es mayor).
+            Este operador no toma en cuenta el tipo de dato de los operandos.   
+          </li>
+          <p>Ejemplos:</p>
+          <div class="contImg">
+            <img
+              src="/Imagenes/relacional.png"
+              alt="Operadores relacionales"
+            />
+          </div>
+        </ul>
+      </article>
+    </section>
+    <aside class="divisor">
+        <h2>Ejemplo:</h2>
+        <article>
+          <h3>Saber si un numero es par:</h3>
+          <p>
+              El siguiente codigo nos indicará si un numero 
+              ingresado es par, en este caso el numero esta
+              dado por la variable s = 10.
+          </p>
+          <p>Ejm:</p>
+          <div class="contImg">
+            <img src="/Imagenes/numeroPar.png" alt="Numero Par" />
+          </div>
+        </article>
+    </aside>
+    <aside class="divisor">
+        <h2>Ejemplo:</h2>
+        <article>
+          <h3>Saber si es mayor de edad:</h3>
+          <p>
+              El siguiente codigo nos indicará si una edad ingresada
+              es mayor de edad ( edad mayor de 18 años) , en este caso 
+              el numero esta dado por la variable edad.
+          </p>
+          <p>Ejm:</p>
+          <div class="contImg">
+            <img src="/Imagenes/MayorEdad.png" alt="Mayor de edad" />
+          </div>
+        </article>
+    </aside>
+  </body>
+</html>

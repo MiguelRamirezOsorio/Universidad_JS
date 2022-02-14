@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Universidad JavaScript</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/Imagenes/icono.png" />
+  </head>
+
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("/Semantica/nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+    <section class="divisor">
+      <h2>Operadores de Comparación en JS:</h2>
+      <article>
+        <p>Primero inicializaremos las variables:</p>
+        <div class="contImg">
+          <img src="/Imagenes/IniCom.png" alt="Inicio Comparacion" />
+        </div>
+        <p>Tras esto denotaremos a los operadores. Estos son:</p>
+        <ul>
+          <li>
+            Operador ==: Llamado operador igualdad,comprueba si sus dos
+            operandos son iguales y devuelve un resultado booleano. A diferencia
+            del operador de igualdad estricta (===), que convierte y compara
+            operandos que son de diferentes tipos.
+          </li>
+          <div class="contImg">
+            <img src="/Imagenes/igualdad.png" alt="igualdad" />
+          </div>
+          <li>
+            Operador ===: Llamado operador de igualdad estricta, revisa si dos
+            operandos son iguales y produce un resultado Booleano. A diferencia
+            del operador de igualdad regular (==), el operador de estricta
+            igualdad siempre considera que los operandos de distinto tipo de
+            valor son diferentes y nunca similares.
+          </li>
+          <div class="contImg">
+            <img
+              src="/Imagenes/igualdadEstricta.png"
+              alt="Igualdad Estricta"
+            />
+          </div>
+          <li>
+            Operador !==: Llamado operador de distinto, revisa si dos
+            operandos son distintos y produce un resultado Booleano. A diferencia
+            del operador de distinto estricto (!===), el operador de distinto 
+            no considera los tipos  de los operandos. 
+          </li>
+          <div class="contImg">
+            <img
+              src="/Imagenes/distintoA.png"
+              alt="Distinto a"
+            />
+          </div>
+          <li>
+            Operador !===: Llamado operador de distinto estricto, revisa si dos
+            operandos son distinto y produce un resultado Booleano. A diferencia
+            del operador de distinto a regular (!==), el operador de distinto a estricto
+            siempre considera que los operandos de distinto tipo de
+            valor son diferentes y nunca similares.
+          </li>
+          <div class="contImg">
+            <img
+              src="/Imagenes/distintoEstr.png"
+              alt="distinto Estricto"
+            />
+          </div>
+        </ul>
+      </article>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Universidad JavaScript</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/Imagenes/icono.png" />
+  </head>
+
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("/Semantica/nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+    <section class="divisor">
+      <h2>Operadores Aritméticos en JS:</h2>
+      <article>
+        <p>Antes de iniciar, definiremos las variables:</p>
+        <img src="/Imagenes/definiendo.png" alt="Variables definidas">
+        <p>Dividiremos a los operadores aritmeticos en 3 grupos:</p>
+        <ul>
+            <li>
+                Basicos: Se encuentran: 
+                <ul>
+                    <li>Suma: Se usa el operador "+". Ejm: 
+                        <img src="/Imagenes/suma.png">
+                    </li>
+                    <li>Resta: Se usa el operador "-". Ejm: 
+                        <img src="/Imagenes/resta.png">
+                    </li>
+                    <li>Multiplicación: Se usa el operador "*". Ejm: 
+                        <img src="/Imagenes/multiplicacion.png">
+                    </li>
+                    <li>División: Se usa el operador "/". Ejm: 
+                        <img src="/Imagenes/dvision.png">
+                    </li>
+                </ul>
+            </li>
+            <li>Avanzados: 
+                <ul>
+                    <li>Exponenciación: Se usa el operador "**". Ejm: 
+                        <img src="/Imagenes/exponenciacion.png">
+                    </li>
+                    <li>Modulo(residuo): Se usa el operador "%". Ejm: 
+                        <img src="/Imagenes/modulo.png">
+                    </li>
+                </ul>
+            </li>
+            <li>De Aumento y decremento:
+                <ul>
+                    <li>Incremento: Se usa el operador "++".<br>
+                        Tiene 2 subtipos: el pre-incremento (incrementa la variable 
+                        primero y despues lo asigna); y el post-incremento (asigna 
+                        la variable y despues lo incrementa). 
+                        <br>Ejm:
+                        <img src="/Imagenes/incremento.png" alt="incremento">
+                    </li>
+                    <li>Decremento: Se usa el operador "--". <br>
+                        Tiene 2 subtipos: el pre-decremento (decrementa la variable 
+                        primero y despues lo asigna); y el post-decremento (asigna 
+                        la variable y despues lo decrementa). 
+                        <br>Ejm:
+                        <img src="/Imagenes/decremento.png" alt="decremento">
+                    </li>
+                </ul>
+            </li>
+        </ul>
+      </article>
+    </section>
+    <aside class="divisor">
+        <h2>OJO:</h2>
+        <article>
+          
+          <h3>Precedencia de operadores:</h3>
+          <p>Ante muchos operadores debemos tener en cuenta que JavaScript
+              evalua las expresiones de izquierda a derecha, pero debemos 
+              tener en cuenta que algunos operadores tienen mayor rango que 
+              otros. Es asi como tenemos la siguiente jerarquia de operadores:
+              <ul>
+                  <li>1°: Operadores [], (), "." ,new.</li>
+                  <li>2°: Operadores ++, --, !, ~, delete, typeof, void.</li>
+                  <li>3°: Operadores *, /, %.</li>
+                  <li>4°: Operadores +, -.</li>
+                  <li>5°: Operadores >>, "<<" </li>
+                  <li>6°: Operadores <, >, >=, <=. </li>
+                  <li>7°: Operadores ==, !=, ===, !==. </li>
+                  <li>8°: Operador &. </li>
+                  <li>9°: Operador ^.</li>
+                  <li>10°: Operador |.</li>
+                  <li>11°: Operador &&.</li>
+                  <li>12°: Operador ||.</li>
+                  <li>13°: Operador ?.</li>
+                  <li>14°: Operador  de asignacion (=, +=, -=, %=, *=, /=, &=, ^=, |=, <<=, >>=). </li>
+                  <li>15°: Operador "," .</li>
+              </ul>
+          </p>
+          <p>Ejm:</p>
+          <img src="/Imagenes/precedencia.png" />
+        </article>
+    </aside>
+  </body>
+</html>

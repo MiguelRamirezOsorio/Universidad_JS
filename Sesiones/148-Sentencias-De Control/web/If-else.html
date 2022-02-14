@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Universidad JavaScript</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="/Imagenes/icono.png" />
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
+
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("/Semantica/nav.html");
+    });
+  </script>
+  <!--end of Navigation bar-->
+  <section class="divisor">
+    <h2>Sentencia de Control If - Else:</h2>
+    <article>
+      <p>
+        Esta sentencia es del tipo condicional; Esta formada por la siguiente
+        estructura:
+      </p>
+      <div class="estructura">
+        <p>if(condicion){</p>
+        <p style="margin-left: 30px">Ejecuta si la condicion es verdadera</p>
+        <p>}</p>
+        <p>else{</p>
+        <p style="margin-left: 30px">Ejecuta si la condicion es falsa</p>
+        <p>}</p>
+      </div>
+      <p>Donde si la condicion es verdadera, se ejecuta el primer corchete,
+        y si la condicion es falsa, se ejecutara la sentencia else.
+      </p>
+      <p>Por ahora daremos unos ejemplos:</p>
+      <p>Ejm 1:</p>
+      <div class="contImg">
+        <img src="/Imagenes/ifelse.png" alt="Sentencia if - else">
+      </div>
+      <p>Ejm 2: Estacion del año</p>
+      <div class="contImg">
+        <img src="/Imagenes/ejem2.png" alt="Ejemplo 2">
+      </div>
+      <p>Ejm 3: Hora del dia</p>
+      <div class="contImg">
+        <img src="/Imagenes/ejem3.png" alt="Ejemplo 2">
+      </div>
+  </section>
+  <aside class="divisor">
+    <h2>OJO:</h2>
+    <article>
+      <h3>Sentencia else if:</h3>
+      <p>Es usado para multiples condicionales,
+        su estructura es de la siguiente forma:
+      </p>
+      <div class="estructura">
+        <p style="margin: 0 0 0 0px">if(condicion 1){</p>
+        <p style="margin: 0 0 0 30px">.....</p>
+        <p style="margin: 0 0 0 0px">}</p>
+        <p style="margin: 0 0 0 0px">else if(condicion 2){</p>
+        <p style="margin: 0 0 0 30px">.....</p>
+        <p style="margin: 0 0 0 0px">}</p> 
+        <p style="margin: 0 0 0 0px">else if(condicion 3){</p>
+          <p style="margin: 0 0 0 30px">.....</p>
+          <p style="margin: 0 0 0 0px">}</p>
+        <p style="margin: 0 0 0 0px">else{</p>
+        <p style="margin: 0 0 0 30px">.....</p>
+        <p style="margin: 0 0 0 0px">}</p>
+      </div>
+      <p>Ejm:</p>
+      <div class="contImg">
+        <img src="/Imagenes/else if.png" alt="Else if">
+      </div>
+    </article>
+  </aside>
+</body>
+
+</html>

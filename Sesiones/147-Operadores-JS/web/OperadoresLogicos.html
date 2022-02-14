@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Universidad JavaScript</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/Imagenes/icono.png" />
+  </head>
+
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("/Semantica/nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+    <section class="divisor">
+      <h2>Operadores Lógicos en JS:</h2>
+      <article>
+        <p>Los operadores lógicos son:</p>
+        <ul>
+          <li>
+            Operador AND (&&): Llamado operador "Y" , funciona como el operador
+            lógico Y, que nos dice que si un lado de la condición es falsa,
+            entonces toda la condicion es falsa. Esto quedará detallado mejor en
+            la siguiente tabla:
+            <table>
+              <caption>
+                Operador AND (&&):
+              </caption>
+              <tr>
+                <th>p</th>
+                <th>q</th>
+                <th>Z = (p && q)</th>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>F</td>
+              </tr>
+              <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>F</td>
+              </tr>
+              <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+              </tr>
+            </table>
+          </li>
+          <p>Ejm:</p>
+          <div class="contImg">
+            <img src="/Imagenes/and.png" />
+          </div>
+          <li>
+            Operador OR ( || ): Llamado operador "O", funciona como el operador
+            lógico O, que nos dice que si los dos lados de la condicion es
+            falsa, entonces toda la condicion es falsa, caso contrario toda la
+            condicion es verdadera. Esto quedará detallado mejor en la siguiente
+            tabla:
+            <table>
+              <caption>
+                Operador OR ( || ):
+              </caption>
+              <tr>
+                <th>p</th>
+                <th>q</th>
+                <th>Z = (p || q)</th>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>V</td>
+              </tr>
+              <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>V</td>
+              </tr>
+              <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+              </tr>
+            </table>
+          </li>
+          <p>Ejemplo:</p>
+          <div class="contImg">
+            <img src="/Imagenes/or.png" />
+          </div>
+          <li>
+            Operador Ternario ( ? :): Llamado operador if else , se comporta de
+            la siguiente manera:
+            <p style="text-align: center">c1 ? c2 : c3</p>
+            donde la c1 es la condicion base, en base a esta condicion se
+            generan dos condiciones más:
+            <ul>
+              <li>
+                Si la condicion C1 es verdadera, entonces se ejecuta la C2.
+              </li>
+              <li>
+                Si la condicion C1 es falsa, entonces se ejecuta la condicion
+                C3.
+              </li>
+            </ul>
+            <p>Esto quedará detallado en el siguiente ejemplo:</p>
+          </li>
+          <div class="contImg">
+            <img src="/Imagenes/ternario.png" alt="Operador Ternario" />
+          </div>
+        </ul>
+      </article>
+    </section>
+    <aside class="divisor">
+      <h2>OJO:</h2>
+      <article>
+        <h3>Conversion de String a Number:</h3>
+        <p>
+          Para la conversion de tipo String a tipo Number se usa el objeto
+          Number, que tiene un convertidor de diferentes valores a un tipo
+          number, esto mediante el Number().
+        </p>
+        <p>Ejm:</p>
+        <div class="contImg">
+          <img src="/Imagenes/conversion.png" alt="Mayor de edad" />
+        </div>
+      </article>
+    </aside>
+    <aside class="divisor">
+      <h2>OJO 2:</h2>
+      <article>
+        <h3>Función isNaN:</h3>
+        <p>
+          La función isNaN sirve para verificar si el valor de una 
+          variable realmente es un numero. Para verlo mejor observemos 
+          el siguiente ejemplo.
+        </p>
+        <div class="contImg">
+          <img src="/Imagenes/isnan.png" alt="isNan" />
+        </div>
+      </article>
+    </aside>
+  </body>
+</html>

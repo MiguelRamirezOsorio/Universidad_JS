@@ -1,0 +1,217 @@
+/*Universo-------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+/*-------------------------------*/
+
+
+/*Parrafos dentro del section*/
+.divisor p{
+    margin: 5px 0 10px 0;
+}
+/*-------------------------------*/
+
+/*barra de navegacion*/
+nav{
+    background-color: #000000;
+    
+}
+/*-------------------------------*/
+
+/*barra navegacion principal*/
+nav ul li{
+    display: inline-block;
+    padding: 4px;
+}
+/*-------------------------------*/
+
+/*sub-bloques de cada item de la barra de navegacion*/
+nav .sub li{
+    display: block;
+}
+/*-------------------------------*/
+
+/*hipervinculo de la barra de navegacion principal*/
+nav li a{
+    color: #f5f11e;
+    text-decoration: none;
+    display:block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-top: 2px solid #f5f11e;
+    border-bottom: 2px solid #f5f11e;
+}
+/*-------------------------------*/
+
+/*al poner encima de un hipervinculo del nav*/
+nav li a:hover {
+    background: linear-gradient(#fffb00,#e7e415,#eedf14,#e6c11e);
+    border-radius: 0px 9px 0px 9px;
+    color: #000000;
+}
+/*-------------------------------*/
+
+/*subhipervinculos */
+nav li ul {
+    background-color: #000000;
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+/*-------------------------------*/
+
+/*aparicion de los subhipervinculos*/
+nav li:hover > ul {
+    display: block;
+}
+/*-------------------------------*/
+
+/*Cabezal---------------------*/
+header{
+    text-align: center;
+    background: #f5f11e;
+    padding: 10px;
+    box-shadow: inset 0px 0px 11px 1px rgb(0 0 0 / 40%);
+}
+
+#titulo{
+    text-decoration: none;
+    font-size: 35px;
+    color: #000000;
+    font-weight: bolder;
+}
+
+header #logo{
+    width: 50px;
+    margin-top: 6px;
+    border: 2px solid #000000;
+}
+/*-------------------------------*/
+
+/*Imagenes*/
+.divisor img{
+    border: 2px solid #000000;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    transition: all 400ms;
+}
+
+.divisor img:hover{
+    transform: scale(1.05);
+}
+
+
+/*Contenedor imagen*/
+.contImg{
+    width: 90%;
+    margin:5px 10px 10px 10px;
+}
+
+/*section*/
+section{
+    display: inline;
+    font-weight: bold;
+    margin:20px 5px 10px 10px;
+    width: 60%;
+    float: left;
+    box-shadow:  0px 0px 9px 2px rgb(0 0 0 / 40%);
+    border-radius: 6px;
+    text-align: justify;
+}
+
+/*Cabeceras dentro del section*/
+.divisor h2{
+    background-color: #000000;
+    font-size: 25px;
+    color: #f5f11e;;
+    margin: 10px 5px 0 5px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+aside article{
+    margin: 8px;
+}
+
+/*-------------------------------*/
+
+.divisor h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+article{
+    margin: 15px;
+    display: block;
+}
+
+
+/*Para listas*/
+p + ul{
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+img + li{
+    margin-top: 15px;
+}
+
+/*aside lateral*/
+aside{
+    display: inline;
+    font-weight: bold;
+    width: 35%;
+    margin:20px 5px 10px 10px;
+    float: right;
+    background-color: #e7e415;
+    box-shadow:  0px 0px 9px 2px rgb(0 0 0 / 40%);
+    border-radius: 6px;
+    text-align: justify;
+}
+
+/*listas dentro del section*/
+.divisor ul li ul{
+    margin-left: 20px;
+}
+
+.divisor article > ul li {
+    margin-top: 10px;
+}
+
+/*Tablas*/
+table{
+    border: 2px solid #000000;
+    margin: auto;
+    max-width: 300px;
+    width: 90%;
+    text-align: center;
+}
+
+caption{
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+}
+td{
+    border: 2px solid #000000;
+    border-collapse: separate;
+}
+th{
+    background-color: #000000;
+    color: #f5f11e;
+}
+
+/*-----------------*/
+
+/*Para estructuras de sentencias*/
+.estructura{
+    margin: auto;
+    background-color: beige;
+    border: 4px inset #a8aa96;
+    border-radius: 4px;
+    width: 80%;
+    padding: 20px;
+}
