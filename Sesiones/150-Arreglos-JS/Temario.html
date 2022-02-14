@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Universidad JavaScript</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/Imagenes/icono.png" />
+  </head>
+
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("/Semantica/nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+    <section class="divisor">
+      <h2>Arreglos en JS:</h2>
+      <article>
+        <h3>Definición:</h3>
+        <p>
+          Los arrays son objetos similares a una lista cuyo prototipo
+          proporciona métodos para efectuar operaciones de recorrido y de
+          mutación.
+          <br />Tanto la longitud como el tipo de los elementos de un array son
+          variables. Dado que la longitud de un array puede cambiar en cualquier
+          momento, y los datos se pueden almacenar en ubicaciones no contiguas,
+          no hay garantía de que los arrays de JavaScript sean densos; esto
+          depende de cómo el programador elija usarlos.<br />
+          En general estas características son cómodas, pero si, en su caso
+          particular, no resultan deseables, puede considerar el uso de arrays
+          con tipo.
+        </p>
+        <p>Ejm :</p>
+        <div class="contImg">
+          <img src="/Imagenes/arraysEj.png" alt="Ejemplo de arrays" />
+        </div>
+        <h3>Recorrido de Arreglos:</h3>
+        <p>
+          Para acceder a los elementos de un arreglo se debe saber que su primer
+          elemento es el numero 0 y de ahi va en incremento. Tras saber esto,
+          para acceder a un elemento del arreglo se hará uso la siguiente
+          digitación:
+        </p>
+        <p style="text-align: center">variable[numero del elemento].</p>
+        <p>
+          Para el recorrido general del arreglo se hara uso de las sentencias
+          ciclicas como lo son el for o el while, esto quedará detallado de
+          igual manera en el ejemplo a continuación:
+        </p>
+        <div class="contImg">
+          <img src="/Imagenes/recorridoArray.png" alt="Recorrido de arrays" />
+        </div>
+        <h3>Modificar elementos de arreglos:</h3>
+        <p>
+          Para cambiar un elemento especifico del arreglo se hará uso de la
+          siguiente sentencia:
+        </p>
+        <p style="text-align: center">
+          variable[numeroElemento] = cambio de elemento;
+        </p>
+        <p>Ejm:</p>
+        <div class="contImg">
+          <img src="/Imagenes/modifArreglo.png" alt="Modificar array" />
+        </div>
+        <h3>Agregar elementos de arreglos:</h3>
+        <p>
+          Para agregar un elemento en un arreglo se puede hacer de 3 formas
+          distintas:
+        </p>
+        <ul>
+          <li>
+            Uso del metodo push: Se hace uso de la sentencia:<br>
+            <span style="color: crimson">variable.push(nuevoElemento);</span>
+          </li>
+          <li>Uso del largo del arreglo: Se hace uso de la siguiente sentencia:<br>
+            <span style="color: crimson">variable[variable.length] = nuevoElemento;</span> 
+          </li>
+          <li>Mediante los indices: Este puede dejar lugares vacios, se usa la siguiente sentencia:
+            <span style="color: crimson">variable[numeroElemento] = nuevoElemento;</span> 
+          </li>
+        </ul>
+        <p>Ejm:</p>
+        <div class="contImg">
+          <img src="/Imagenes/agregarArray.png" alt="Agregar array" />
+        </div>
+      </article>
+    </section>
+    <aside class="divisor">
+      <h2>OJO:</h2>
+      <article>
+        <h3>Preguntar si es un array:</h3>
+        <p>
+          A partir de la version ECMA-SCRIPT 2015 se usa el siguiente método:
+        </p> 
+        <p style="text-align: center;"><span style="color: crimson;">Array.isArray(variable);</span></p>
+        <p>
+            Otra forma de saber si es un arreglo es mediante el instanceof:
+        </p>
+        <p style="text-align: center;"><span style="color: crimson;">variable instanceof Array; </span></p>
+        <p>Ejm:</p>
+        <div class="contImg">
+          <img src="/Imagenes/isArray.png" alt="Es arreglo" />
+        </div>
+      </article>
+    </aside>
+  </body>
+</html>
