@@ -120,3 +120,43 @@ function addAll(){
 console.log(addAll.length);
 console.log(result);
 
+//Paso por valor
+//Es cuando se usan tipos que no son objetos
+let exc = 10; //Tipos primitivos
+
+//Lo que sucede: arg = exc, arg=10, arg = 20 
+function cambiarValor(arg){
+    arg = 20;
+    console.log(arg);
+}
+
+cambiarValor(exc);
+//la variable exc no sufrio ningun cambio
+//este solo le paso una copia de su valor
+//Esto es el paso por valor
+console.log(exc);
+
+
+
+//Paso por referencia
+// Para el caso de objetos
+const persona = {
+    nombre : 'Juan',
+    apellido : 'Perez'
+}
+
+function cambiarValorObjeto(p1){
+    p1.nombre = 'Carlos';
+    p1.apellido = 'Ramirez';
+}
+
+//p1 obtiene la referencia en memoria  del objeto
+// por eso puede cambiar su valor.
+cambiarValorObjeto(persona);
+//al mandar a imprimir la variable persona 
+//lee los atributos del objeto dado en referencia
+console.log(persona.nombre);
+console.log(persona.apellido);
+
+
+
